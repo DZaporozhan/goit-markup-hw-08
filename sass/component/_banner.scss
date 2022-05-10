@@ -1,0 +1,41 @@
+.banner {
+  background-color: var(--footer-bg-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/banner.jpg);
+  background-repeat: no-repeat;
+}
+
+.banner__tittle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--baner-tittle-color);
+
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.banner__btn {
+  background-color: var(--accent-color);
+  color: var(--baner-tittle-color);
+
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
+  &:active {
+    background-color: var(--btn-click-color);
+  }
+}
+

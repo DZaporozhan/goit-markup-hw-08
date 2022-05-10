@@ -1,0 +1,126 @@
+footer {
+  background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-top: 20px;
+}
+
+.address-post {
+  padding-left: 0;
+}
+
+.footer-address__text {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--white-color);
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.address-post__link {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--address-link-footer);
+
+  margin-top: 0;
+}
+
+.address-post__item--prepend {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.footer-box__item--prepend {
+  margin-right: 70px;
+}
+
+.footer-box__tittle {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.footer-soclist {
+  display: flex;
+  text-align: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-soclist__item {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  background-color: var(--accent-color);
+  }
+}
+
+.footer-soclist__link {
+  color: var(--white-color);
+}
+
+.footer-soclist__icon {
+  fill: currentColor;
+}
+
+.footer-soclist__item--prepend {
+  margin-right: 10px;
+}
+
+
+
+
+.footer-box__item--append {
+  margin-left: 90px;
+}
+.footer-box__form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-box__input {
+  width: 358px;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-bg-color);
+
+  color: var(--main-text-color);
+}
+
+.footer-box__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  padding: 10px 29px;
+  background: var(--accent-color);
+}
+
+.btn__icon--append {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}

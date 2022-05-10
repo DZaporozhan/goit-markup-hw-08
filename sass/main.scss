@@ -1,0 +1,25 @@
+//Utils
+@import './utils/vars';
+@import './utils/hidden';
+@import './utils/variables';
+//Basic
+@import './base/body';
+@import './base/section';
+@import './base/container';
+@import './base/tittle';
+@import './base/text';
+@import './base/button';
+@import './base/list';
+@import './base/backdrop';
+@import './base/modal';
+@import './base/logo';
+//Bloks
+@import './component/header';
+@import './component/banner';
+@import './component/peculiar';
+@import './component/work';
+@import './component/our-team';
+@import './component/our-client';
+@import './component/footer';
+@import './component/menu-filter';
+@import './component/product-cart';
