@@ -1,25 +1,79 @@
 .site-header {
   border-bottom: 1px solid #ececec;
 }
-.site-nav {
+.header-box {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.site-nav {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-nav {
-  display: flex;
   list-style: none;
-  margin: 0;
   padding-left: 0;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: 0;
+  }
 }
 
 .header-nav__item {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .header-nav__item--append {
-  margin-left: 50px;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 
 .header-nav__link {
@@ -56,19 +110,44 @@
 }
 
 .contact-list {
-  display: flex;
   list-style: none;
-  margin: 0 0 0 auto;
   padding-left: 0;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: 0 0 0 auto;
+  }
 }
 .contact-list__item {
-  display: inline-flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contact-list__item--append {
-  margin-left: 50px;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 
 .contact-list__link {

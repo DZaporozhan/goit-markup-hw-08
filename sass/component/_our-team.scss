@@ -3,18 +3,38 @@
 }
 
 .our-team__tittle {
-  text-align: center;
+  // text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+  }
 }
 
 .pers-cart {
-  display: flex;
+  // display: flex;
   text-align: center;
-
   list-style: none;
   margin: 0;
   padding-left: 0;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .pers-cart__item {
@@ -22,9 +42,51 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((768px - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((1200px - 4 * 30px) / 4);
+  }
 }
 .pers-cart__item--append {
-  margin-left: 30px;
+  // margin-left: 30px;
+  margin-top: 30px;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 30px;
+    }
+
+    &:nth-child(4) {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4) {
+      margin-top: 0;
+    }
+  }
 }
 
 .pers-label {
@@ -54,11 +116,15 @@
 .pers-social {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 
   margin: 0;
   padding-left: 0;
   list-style: none;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-evenly;
+  }
 }
 .pers-social__link {
   display: flex;

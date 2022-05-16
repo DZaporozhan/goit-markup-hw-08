@@ -5,15 +5,27 @@
 }
 
 .client-post {
-  display: flex;
-  margin: 0;
   padding-left: 0;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: 0;
+  }
 }
-.client-post__item--append {
-  margin-left: 30px;
-}
+
 .client-post__item {
   display: flex;
+  justify-content: space-around;
 
   width: 170px;
   height: 92px;
@@ -26,6 +38,55 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+  }
+  @media screen and (min-width: 480px) {
+    width: calc((480px - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((768px - 3 * 30px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((1200px - 6 * 30px) / 6);
+  }
+}
+.client-post__item--append {
+  @media screen and (min-width: 480px) {
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    &:nth-child(n + 2) {
+      margin-left: 30px;
+    }
+    &:nth-child(4) {
+      margin-left: 0;
+    }
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+    margin-top: 0;
+    &:nth-child(n + 4) {
+      margin-top: 0px;
+    }
+    &:nth-child(4) {
+      margin-left: 30px;
+    }
   }
 }
 .client-post__link {
@@ -47,9 +108,3 @@
 .client-post__icon {
   fill: currentColor;
 }
-
-
-
-
-
-
