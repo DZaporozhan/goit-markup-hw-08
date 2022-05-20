@@ -178,3 +178,32 @@
     fill: currentColor;
   }
 }
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.js-open-menu {
+  display: block;
+  color: #212121;
+  background-color: transparent;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 15px;
+  border: none;
+}

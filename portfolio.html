@@ -23,7 +23,7 @@
   <body class="body">
     <!-- Шапка -->
     <header class="site-header">
-      <div class="container site-nav">
+      <div class="container header-box">
         <a href="./index.html" class="logo">Web<span class="logo_head">Studio</span></a>
         <nav class="site-nav">
           <ul class="header-nav">
@@ -56,6 +56,63 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-toggle js-open-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#mob-menu" class="icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!--Mobile menu-->
+      <div class="menu-container js-menu-container is-open">
+        <button type="button" class="menu-toggle js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#mob-close" class="icon-cross"></use>
+          </svg>
+        </button>
+        <div class="mobmenu-box">
+          <nav class="mobmenu-box__item">
+            <ul class="menu-nav list">
+              <li class="menu-nav__item">
+                <a href="./index.html" class="menu-nav__link"> Студия </a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="./portfolio.html" class="menu-nav__link menu-nav__link--active">
+                  Портфолио
+                </a>
+              </li>
+              <li class="menu-nav__item"><a href="./" class="menu-nav__link"> Контакты </a></li>
+            </ul>
+          </nav>
+          <div class="mobmenu-box__item">
+            <ul class="menu-contact list">
+              <li class="menu-contact__item">
+                <a href="tel:+380961111111" class="menu-contact__link menu-contact__link--phone">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="menu-contact__item">
+                <a href="mailto:info@devstudio.com" class="menu-contact__link menu-contact__email">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="menu-social list">
+              <li class="menu-social__item">
+                <a href="https://www.instagram.com/" class="menu-social__link"> Instagram </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="https://twitter.com/" class="menu-social__link"> Twitter </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="https://www.facebook.com/" class="menu-social__link"> Facebook </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="https://www.linkedin.com" class="menu-social__link"> LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Портфолио -->
@@ -303,5 +360,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
