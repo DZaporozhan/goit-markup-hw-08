@@ -6,16 +6,9 @@
 
 .client-post {
   padding-left: 0;
-
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -29,6 +22,7 @@
 
   width: 170px;
   height: 92px;
+
   border: 1px solid;
   border-color: #afb1b8;
   border-radius: 4px;
@@ -39,20 +33,25 @@
   &:focus {
     border-color: var(--accent-color);
   }
-  @media screen and (min-width: 480px) {
-    width: calc((480px - 2 * 30px) / 2);
-  }
-
-  @media screen and (min-width: 768px) {
-    width: calc((768px - 3 * 30px) / 3);
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: calc((1200px - 6 * 30px) / 6);
-  }
 }
+@media screen and (min-width: 480px) {
+  width: calc((480px - 2 * 30px) / 2);
+
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  width: calc((768px - 3 * 30px) / 3);
+}
+
+@media screen and (min-width: 1200px) {
+  width: calc((1200px - 6 * 30px) / 6);
+}
+
 .client-post__item--append {
+  margin-top: 30px;
   @media screen and (min-width: 480px) {
+    margin-top: 0;
     &:nth-child(2n) {
       margin-left: 30px;
     }

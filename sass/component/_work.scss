@@ -1,4 +1,6 @@
 .work__tittle {
+  display: none;
+
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
@@ -17,17 +19,10 @@
 }
 
 .work {
+  display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
-
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 
   @media screen and (min-width: 1200px) {
     display: flex;

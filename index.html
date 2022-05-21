@@ -61,7 +61,7 @@
         </button>
       </div>
       <!--Mobile menu-->
-      <div class="menu-container js-menu-container is-open">
+      <div class="menu-container js-menu-container">
         <button type="button" class="menu-toggle js-close-menu">
           <svg width="40" height="40">
             <use href="./images/icons.svg#mob-close" class="icon-cross"></use>
@@ -267,17 +267,17 @@
               <img
                 class="photo"
                 srcset="
-                  ./images/per1.jpg  270w,
-                  ./images/per1-.jpg 270w,
-                  ./images/per1.jpg  270w,
-                  ./images/per1.jpg  270w,
-                  ./images/per1.jpg  270w,
-                  ./images/per1.jpg  270w
+                  ./images/per1.jpg        270w,
+                  ./images/per1-tab.jpg    354w,
+                  ./images/per1-mob.jpg    450w,
+                  ./images/per1-des@2x.jpg 540w,
+                  ./images/per1-tab@2x.jpg 708w,
+                  ./images/per1-des@4.jpg  810w,
+                  ./images/per1-mob@2x.jpg 900w
                 "
-                sizes="(min-width: 480px) 600px, (min-width: 768px) 300px, 100vw"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
                 src="images/per1.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
               />
               <div class="pers-label">
                 <h3 class="tittle pers-label__name">Игорь Демьяненко</h3>
@@ -315,7 +315,21 @@
               </div>
             </li>
             <li class="pers-cart__item pers-cart__item--append">
-              <img class="photo" src="images/per2.jpg" alt="Ольга Репина" width="270" />
+              <img
+                class="photo"
+                srcset="
+                  ./images/per2.jpg        270w,
+                  ./images/per2-tab.jpg    354w,
+                  ./images/per2-mob.jpg    450w,
+                  ./images/per2-des@2x.jpg 540w,
+                  ./images/per2-tab@2x.jpg 708w,
+                  ./images/per2-des@4.jpg  810w,
+                  ./images/per2-mob@2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+                src="images/per2.jpg"
+                alt="Ольга Репина"
+              />
               <div class="pers-label">
                 <h3 class="tittle pers-label__name">Ольга Репина</h3>
                 <p class="text pers-label__prof">Frontend Developer</p>
@@ -352,7 +366,21 @@
               </div>
             </li>
             <li class="pers-cart__item pers-cart__item--append">
-              <img class="photo" src="images/per3.jpg" alt="Николай Тарасов" width="270" />
+              <img
+                class="photo"
+                srcset="
+                  ./images/per3.jpg        270w,
+                  ./images/per3-tab.jpg    354w,
+                  ./images/per3-mob.jpg    450w,
+                  ./images/per3-des@2x.jpg 540w,
+                  ./images/per3-tab@2x.jpg 708w,
+                  ./images/per3-des@4.jpg  810w,
+                  ./images/per3-mob@2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+                src="images/per3.jpg"
+                alt="Николай Тарасов"
+              />
               <div class="pers-label">
                 <h3 class="tittle pers-label__name">Николай Тарасов</h3>
                 <p class="text pers-label__prof">Marketing</p>
@@ -389,7 +417,21 @@
               </div>
             </li>
             <li class="pers-cart__item pers-cart__item--append">
-              <img class="photo" src="images/per4.jpg" alt="Михаил Ермаков" width="270" />
+              <img
+                class="photo"
+                srcset="
+                  ./images/per4.jpg        270w,
+                  ./images/per4-tab.jpg    354w,
+                  ./images/per4-mob.jpg    450w,
+                  ./images/per4-des@2x.jpg 540w,
+                  ./images/per4-tab@2x.jpg 708w,
+                  ./images/per4-des@4.jpg  810w,
+                  ./images/per4-mob@2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+                src="images/per4.jpg"
+                alt="Михаил Ермаков"
+              />
               <div class="pers-label">
                 <h3 class="tittle pers-label__name">Михаил Ермаков</h3>
                 <p class="text pers-label__prof">UI Designer</p>
@@ -478,56 +520,58 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-box">
-          <div class="footer-box__item footer-box__item--prepend">
-            <a href="index.html" class="logo logo--center"
-              >Web<span class="logo_footer">Studio</span></a
-            >
-            <address class="footer-address">
-              <p class="footer-address__text text">г. Киев, пр-т Леси Украинки, 26</p>
-              <ul class="address-post list">
-                <li class="address-post__item address-post__item--prepend">
-                  <a href="mailto:info@devstudio.com" class="address-post__link"
-                    >info@devstudio.com</a
-                  >
+          <div class="tab-flex">
+            <div class="footer-box__item footer-box__item--prepend">
+              <a href="index.html" class="logo logo--center"
+                >Web<span class="logo_footer">Studio</span></a
+              >
+              <address class="footer-address">
+                <p class="footer-address__text text">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="address-post list">
+                  <li class="address-post__item address-post__item--prepend">
+                    <a href="mailto:info@devstudio.com" class="address-post__link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="address-post__item">
+                    <a href="tel:+380961111111" class="address-post__link">+380961111111</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-box__item">
+              <p class="footer-box__tittle text">ПРИСОЕДЕНЯЙТЕСЬ</p>
+              <ul class="footer-soclist list">
+                <li class="footer-soclist__item footer-soclist__item--prepend">
+                  <a class="footer-soclist__link" href="#">
+                    <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address-post__item">
-                  <a href="tel:+380961111111" class="address-post__link">+380961111111</a>
+                <li class="footer-soclist__item footer-soclist__item--prepend">
+                  <a class="footer-soclist__link" href="#">
+                    <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soclist__item footer-soclist__item--prepend">
+                  <a class="footer-soclist__link" href="#">
+                    <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soclist__item">
+                  <a class="footer-soclist__link" href="#">
+                    <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="footer-box__item">
-            <p class="footer-box__tittle text">ПРИСОЕДЕНЯЙТЕСЬ</p>
-            <ul class="footer-soclist list">
-              <li class="footer-soclist__item footer-soclist__item--prepend">
-                <a class="footer-soclist__link" href="#">
-                  <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-soclist__item footer-soclist__item--prepend">
-                <a class="footer-soclist__link" href="#">
-                  <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-soclist__item footer-soclist__item--prepend">
-                <a class="footer-soclist__link" href="#">
-                  <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-soclist__item">
-                <a class="footer-soclist__link" href="#">
-                  <svg class="footer-soclist__icon" width="20" height="20" viewBox="0 0 20 20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="footer-box__item footer-box__item--append">
             <p class="footer-box__tittle text">Подпишитесь на рассылку</p>
